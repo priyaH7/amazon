@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en" class="wf-roboto-n3-active wf-roboto-n5-active wf-roboto-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="./Amazon_files/styles.css"><link rel="stylesheet" href="./Amazon_files/css" media="all"><link rel="stylesheet" href="./Amazon_files/css" media="all">
+</head>
+<body>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif f;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.phone-input {
+    display: flex;
+}
+
+.phone-input select {
+    width: 30%;
+    margin-right: 5px;
+}
+
+.note {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;;
+    background-color: #f0c14b;
+    border: 1px solid #a27b19;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e2b344;
+}
+       
+    </style>
+
+    <div class="AMAZON-form">
+        <h1 contenteditable="Amazon">Amazon</h1>
+        <h2>Create account</h2>
+        <form action="http://127.0.0.1:5500/submit_form">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="First and last name" required="">
+
+            <label for="mobile">Mobile number</label>
+            <div class="phone-input">
+                <select id="country-code" name="country-code">
+                    <option value="+91">IN +91</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile number" required="">
+            </div>
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 6 characters" required="">
+            <p class="note">Passwords must be at least 6 characters</p>
+
+            <button type="submit">Amazon account continue</button>
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><div class="notranslate" style="position: absolute; top: 0; right:0;" id="vd-root-d19608294"></div></html>
